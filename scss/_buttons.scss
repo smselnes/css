@@ -1,0 +1,87 @@
+.button__heading {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: auto;
+}
+
+.button {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 10px;
+  border: none;
+}
+
+.button__one {
+  background-color: black;
+  color: #ebe2e2;
+  transition: 0.7s;
+
+  &:hover {
+    background-color: #ebe2e2;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+}
+
+.button__two {
+  background-color: red;
+  color: white;
+  box-shadow: 1px 1px 1px 1px darkred;
+  transition: 0.2s;
+
+  &:hover {
+    transform: rotate(4deg);
+    font-weight: bold;
+  }
+}
+
+.button__three {
+  background-color: aqua;
+
+  &:hover {
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+    background-color: white;
+  }
+}
+
+.button__four {
+  background-color: gainsboro;
+
+  &:active {
+    animation-name: backgroundFromRight;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes backgroundFromRight {
+  0% {
+    background-color: gainsboro;
+  }
+  50% {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  100% {
+    background-color: gainsboro;
+  }
+}
+
+.button__five {
+  background-color: beige;
+  transition: 0.7s;
+
+  &:hover {
+    background-color: black;
+    color: beige;
+  }
+}

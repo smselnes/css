@@ -1,0 +1,143 @@
+.button__heading {
+  text-align: center;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 150px;
+  margin: auto;
+}
+
+.button {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 10px;
+  border: none;
+}
+
+.button__one {
+  background-color: black;
+  color: #ebe2e2;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.button__one:hover {
+  background-color: #ebe2e2;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.button__two {
+  background-color: red;
+  color: white;
+  -webkit-box-shadow: 1px 1px 1px 1px darkred;
+          box-shadow: 1px 1px 1px 1px darkred;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button__two:hover {
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  font-weight: bold;
+}
+
+.button__three {
+  background-color: aqua;
+}
+
+.button__three:hover {
+  border-top: 2px solid aqua;
+  border-bottom: 2px solid aqua;
+  background-color: white;
+}
+
+.button__four {
+  background-color: gainsboro;
+}
+
+.button__four:active {
+  -webkit-animation-name: backgroundFromRight;
+          animation-name: backgroundFromRight;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes backgroundFromRight {
+  0% {
+    background-color: gainsboro;
+  }
+  50% {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  100% {
+    background-color: gainsboro;
+  }
+}
+
+@keyframes backgroundFromRight {
+  0% {
+    background-color: gainsboro;
+  }
+  50% {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  100% {
+    background-color: gainsboro;
+  }
+}
+
+.button__five {
+  background-color: beige;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.button__five:hover {
+  background-color: black;
+  color: beige;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 1rem;
+  background-color: lightgreen;
+  margin: 10px;
+}
+
+nav a:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #adc8ad;
+  border-radius: 15px 0px 15px 0px;
+}
+/*# sourceMappingURL=style.css.map */

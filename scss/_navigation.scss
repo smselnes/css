@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+
+  & a {
+    text-decoration: none;
+    padding: 1rem;
+    background-color: lightgreen;
+    margin: 10px;
+
+    &:hover {
+      transition: 1s;
+      background-color: #adc8ad;
+      border-radius: 15px 0px 15px 0px;
+    }
+  }
+}
