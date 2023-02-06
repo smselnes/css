@@ -140,4 +140,150 @@ nav a:hover {
   background-color: #adc8ad;
   border-radius: 15px 0px 15px 0px;
 }
+
+.animation__container {
+  border: 1px solid black;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  margin: 10px;
+}
+
+.animation__one--item {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  -webkit-animation: bounce 2s linear infinite;
+          animation: bounce 2s linear infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    left: 0;
+  }
+  50% {
+    margin-left: 10%;
+    margin-top: 40px;
+    background-color: blue;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    left: 0;
+  }
+  50% {
+    margin-left: 10%;
+    margin-top: 40px;
+    background-color: blue;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.animation__two--item {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  border-radius: none;
+  -webkit-animation: slide 4s linear infinite;
+          animation: slide 4s linear infinite;
+  position: absolute;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+    background-color: yellow;
+  }
+  50% {
+    top: 200px;
+    left: 200px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+    background-color: yellow;
+  }
+  50% {
+    top: 200px;
+    left: 200px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.animation__three--item {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: multi 3s linear infinite;
+          animation: multi 3s linear infinite;
+}
+
+@-webkit-keyframes multi {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: red;
+    margin: 20px;
+    margin-left: 50%;
+    border-radius: 50%;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+@keyframes multi {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: red;
+    margin: 20px;
+    margin-left: 50%;
+    border-radius: 50%;
+  }
+  100% {
+    background-color: blue;
+  }
+}
 /*# sourceMappingURL=style.css.map */
